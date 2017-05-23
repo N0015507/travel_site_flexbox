@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Form Project 1</title>
+
+    <style>
+* {
+/*border: 1px red dashed;*/
+
+}
+    body{
+      /*background-color: lightblue;
+      border: 1px solid lightgrey;*/
+      margin:20px;
+      }
+
+      .myForm input{
+        display:flex;
+        padding: 0px;
+        margin: 0px;
+        background-color: inherit;
+        border-style: none;
+
+        /*border: 2px solid red;*/
+        /*width: 100%;*/
+      }
+
+      .firstLine {
+        display: flex;
+        justify-content: space-around;
+      }
+      .secondLine {
+        display: flex;
+        justify-content: space-around;
+      }
+      .thirdLine {
+        display: flex;
+        justify-content: space-around;
+      }
+      .fourthLine {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .label {
+        color: grey;
+        /*border: 1px black solid;*/
+        width: 100%;
+      }
+
+      .wrapper div{
+        /*border: 2px solid black;*/
+        /*padding: 5px;
+        margin: 5px;*/
+        border: 1px solid grey;
+        width: 100%;
+      }
+
+      .firstLine div {
+        padding: 10px;
+      }
+
+      .secondLine div {
+        padding: 10px;
+      }
+
+      .thirdLine div {
+        padding: 10px;
+      }
+
+      .fourthLine {
+        border: 0px solid white;
+      }
+
+      .fourthLine input{
+        background-color: lightgreen;
+        border-radius: 4px;
+        width: 20%;
+        text-align: center;
+        border: 2px green solid;
+        padding: 5px;
+        margin: 5px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <form class="myForm" action="index.html" method="post">
+
+
+      <div class="wrapper">
+
+
+          <div class="firstLine">
+              <div class="one">
+                <label class="label">NAME <br><br>
+                  <input type="text" name="txtName" placeholder="What is your name?"/>
+                </label>
+              </div>
+              <div class="one">
+                <label class="label">COMPANY <br><br>
+                  <input type="text" name="txtCompany" placeholder="Where do you currently work?"/>
+                </label>
+              </div>
+          </div>
+
+
+          <div class="secondLine">
+              <div class="two">
+                <label class="label">PHONE NUMBER <br><br>
+                  <input type="text" name="txtPhone" placeholder="What is the best # to reach you?"/>
+                </label>
+              </div>
+              <div class="two">
+                <label class="label">EMAIL <br><br>
+                  <input type="text" name="txtemail" placeholder="What is your e-mail address?"/>
+                </label>
+              </div>
+              <div class="two">
+                <label class="label">AVAILABILITY <br><br>
+                  <input type="text" name="txtAvailability" placeholder="What is your availabilty?"/>
+                </label>
+              </div>
+          </div>
+
+
+          <div class="thirdLine">
+
+              <div class="three">
+                <label class="label">SKILLS <br><br>
+                  <input type="text" name="txtSkills" placeholder="List a few of your primary skills"/>
+                </label>
+              </div>
+              <div class="three">
+                <label class="label">YRS EXPERIENCE <br><br>
+                  <input type="text" name="txtExperience" placeholder="How many years of experience?"/>
+                </label>
+              </div>
+              <div class="three">
+                <label class="label">FAVORITE COLOR <br><br>
+                  <input type="text" name="txtColor" placeholder="What's your favorite color, above all others?"/>
+                </label>
+              </div>
+              <div class="three">
+                <label class="label">PROGRAMMING LANGUAGE OF CHOICE <br><br>
+                  <input type="text" name="txtLanguage" placeholder="I know. Tough question."/>
+                </label>
+              </div>
+          </div>
+
+
+          <div class="fourthLine">
+            <input type="submit" id="frmSubmit" value="Submit Form">
+          </div>
+
+      </div>
+
+
+    </form>
+  </body>
+</html>
